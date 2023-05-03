@@ -423,8 +423,8 @@ class _ExtensionsGenericMeta(GenericMeta):
         for scls in self.__extra__.__subclasses__():
             if isinstance(scls, GenericMeta):
                 continue
-            if issubclass(subclass, scls):
-                return True
+#             if issubclass(subclass, scls):
+#                 return True
         return False
 
 
